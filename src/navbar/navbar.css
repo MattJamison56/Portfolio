@@ -1,0 +1,114 @@
+.menu-container {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    z-index: 200;
+  }
+
+.menu-container.visible {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .hamburger-menu {
+    position: relative;
+  }
+
+  
+  .hamburger-icon {
+    position: relative;
+    z-index: 201;
+    cursor: pointer;
+    border: none;
+    background: #28262C;
+    padding: 17px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 0px #3A4046;
+    z-index: 201;
+    transition: 0.5 ease;
+    transition: background-color 0.5s ease
+  }
+  
+  .menu-list {
+    position: fixed;
+    top: -20px;  
+    left: -15px;
+    height: 105vh;
+    width: 105vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: rgba(40,38,44, 0.8);
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: baseline;
+    transition: transform 0.5s ease, opacity 0.7s ease;
+    transform: translateX(-100vw);
+    opacity: 0;
+    padding-top: 70px;
+  }
+
+  .menu-list.visible {
+    transform: translateX(0);
+    opacity: 1; 
+  }
+  
+  .menu-list a {
+    padding-left: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+  }
+  
+  .menu-list a:hover {
+    /* background-color: #f1f1f1; */
+    transform: scale(1.05);
+  }
+  
+  .extra-buttons {
+    display: flex; /* Align buttons in a row */
+    margin-left: 10px; /* Spacing from hamburger menu */
+    z-index: 201;
+  }
+  
+  .extra-button {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 3px; /* Spacing between buttons */
+    cursor: pointer;
+    background: #28262C;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px #3A4046;
+    transition: background-color 0.5s ease
+  }
+
+.lnimage, .gitimage{
+    height: 30px;
+    justify-content: center;
+  }
+
+  .hamimage {
+    height: 20px;
+    justify-content: center;
+  }
+
+
+.extra-button:hover, .hamburger-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 3px #3A4046;
+}
+
+.extra-button.visible, .hamburger-icon.visible {
+  box-shadow: 0px 0px 0px #3A4046;
+  background: #443C4C;
+}
+
+

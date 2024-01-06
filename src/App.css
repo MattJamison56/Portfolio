@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background {
+  background-color: #4D5359;
+  z-index: -2;
+}

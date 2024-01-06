@@ -1,0 +1,110 @@
+.loading-bar {
+  height: 200px;
+  width: 800px;
+  /* border: solid;
+  border-color: blue; */
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease; /* Smooth transition for fading and shrinking */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} 
+
+
+.myportfolioname {
+    display: flex;
+    justify-content: center;
+    animation: fadeInUpS 1s ease-out forwards; /* Apply the animation */
+}
+
+.matt{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-right: 10px;
+    font-weight:bolder;
+    font-size: 50px;
+}
+
+.portfolio {
+    font-family: 'Courier New', Courier, monospace;
+    color: #A398A9;
+    font-size: 50px;
+    padding-left: 10px;
+}
+
+
+.scroll-indicator {
+    margin-top: -130px;
+    display: flex;
+    width: 250px;
+    /* border: solid;
+    border-color: blue; */
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUpS 1s ease-out forwards 2s;
+  }
+
+  @keyframes fadeInUpS {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+
+.arrow1, .arrow2 {
+width: 20px; /* or the size of your arrow */
+height: 20px; /* or the size of your arrow */
+background-image: url('downarrow.png');
+background-size: contain;
+background-repeat: no-repeat;
+animation: arrow-animation 1.5s infinite; /* Apply the animation below */
+position: absolute;
+top: 23px;
+}
+
+.arrow1 {
+left: 20px;
+}
+
+.arrow2 {
+right: 20px;
+}
+  
+  
+@keyframes arrow-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .scroll-down{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+}
+
+.stick {
+  font-family: 'Courier New', Courier, monospace;
+  color: #443C4C;
+  font-weight:100;
+  font-size: 80px;
+  transform: translateY(-50px);
+}
