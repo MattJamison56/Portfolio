@@ -8,9 +8,9 @@ function Projects() {
   const [isShown2, setIsShown2] = useState(false);
 
   const images = [
-    {url: "concertbuddiehome.jpg", description: "Home Page"},
-    {url: "concertbuddieexample.jpg", description: "Example Info Page"},
-    {url: "concertbuddieloadingscreen.jpg", description: "Loading Page"}
+    {url: "/matthewjamisonportfolio/concertbuddiehome.jpg", description: "Home Page"},
+    {url: "/matthewjamisonportfolio/concertbuddieexample.jpg", description: "Example Info Page"},
+    {url: "/matthewjamisonportfolio/concertbuddieloadingscreen.jpg", description: "Loading Page"}
   ];
   
 // Handle arrow navigation

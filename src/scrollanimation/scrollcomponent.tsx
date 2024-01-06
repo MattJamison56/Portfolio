@@ -41,7 +41,7 @@ const ScrollAnimationComponent: React.FC<ScrollAnimationComponentProps> = ({ scr
 
     return (
         <div  className="framecontainer" /*ref={containerRef}}*/ >
-            <img src={`/warpspeed/warpspeed_${imageIndex+16}-min.png`} alt={`Frame ${imageIndex}`} />
+            <img src={`/matthewjamisonportfolio/warpspeed/warpspeed_${imageIndex+16}-min.png`} alt={`Frame ${imageIndex}`} />
         </div>
     );
 };

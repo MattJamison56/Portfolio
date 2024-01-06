@@ -42,7 +42,7 @@ const HamburgerMenu: React.FC = () => {
     <div className={`menu-container ${showMenu ? 'visible' : ''}`}>
       <div className="hamburger-menu">
         <button className={`hamburger-icon ${isSlide ? 'visible' : ''}`} onClick={toggleMenu}>
-          <img src='/images/hamburger.png' className="hamimage"></img>
+          <img src='/matthewjamisonportfolio/images/hamburger.png' className="hamimage"></img>
         </button>
         {isOpen && (
           <div className={`menu-list ${isSlide ? 'visible' : ''}`}>
@@ -54,8 +54,8 @@ const HamburgerMenu: React.FC = () => {
         )}
       </div>
       <div className="extra-buttons">
-        <a className={`extra-button ${isSlide ? 'visible' : ''}`} href='https://www.linkedin.com/in/matthew-jamison-dev/' target="_blank"><img src='/images/linkedin.png' className="lnimage"></img></a>
-        <a className={`extra-button ${isSlide ? 'visible' : ''}`} href='https://github.com/MattJamison56' target="_blank"><img src='/images/githubcat.png' className="gitimage"></img></a>
+        <a className={`extra-button ${isSlide ? 'visible' : ''}`} href='https://www.linkedin.com/in/matthew-jamison-dev/' target="_blank"><img src='/matthewjamisonportfolio/images/linkedin.png' className="lnimage"></img></a>
+        <a className={`extra-button ${isSlide ? 'visible' : ''}`} href='https://github.com/MattJamison56' target="_blank"><img src='/matthewjamisonportfolio/images/githubcat.png' className="gitimage"></img></a>
       </div>
     </div>
   );
