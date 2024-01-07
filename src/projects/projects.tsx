@@ -159,7 +159,7 @@ const goToSlide = (index: number)    => {
       <span className='skill'>AI</span>
       <span className='skill'>Web Scraping</span>
       <span className='skill'>UI/UX</span>
-      <span className='skill'>SQL</span>
+      <span className='skill'>SQL Database</span>
     </div>
     <div className="vidandabout fade-in">
       <div className="video-container slide-right"><iframe className="YouTube" src="https://www.youtube.com/embed/Pj54T2ClUgk?si=fyYrXxuOvWRzb7Cc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
