@@ -129,4 +129,8 @@
   .extra-button {
     box-shadow: 0px 0px 0px #3A4046;
   }
+
+  .menu-list a{
+    font-size: 20px;
+  }
 }

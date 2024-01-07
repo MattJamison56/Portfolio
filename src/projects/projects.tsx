@@ -263,3 +263,9 @@ const goToSlide = (index: number)    => {
 }
 
 export default Projects
+
+
+
+
+
+//Menu smaller font and cover screen rightside
