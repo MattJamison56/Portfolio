@@ -128,7 +128,7 @@ const goToSlide = (index: number)    => {
         )}
     </div>
     <button className="read-but" onClick={handleClick}>{isShown ? "Read Less" : "Read More"}</button>
-    <span className='div1 fade-in'>----------------------------------------------------------</span>
+    <span className='div1 fade-in'>---------------------------------------------------</span>
     <span className='projects fade-in' id="projects">Projects</span>
     <span className='div1 fade-in'>-----------</span>
 
@@ -251,7 +251,7 @@ const goToSlide = (index: number)    => {
             <span>matthewjamison56@gmail.com</span>
         </div>
 
-        <span className='div1'>----------------------------------------------------------</span>
+        <span className='div1'>---------------------------------------------------</span>
         <div className="credit">
             <span>Designed by Matthew Jamison</span>
             <span>COPYRIGHT © 2024 Matthew Jamison</span>
