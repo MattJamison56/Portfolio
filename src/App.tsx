@@ -10,13 +10,14 @@ function App() {
   const scrollSpaceRef = useRef<HTMLDivElement>(null);
 
   return (
+  <div className="mainmain">
   <div className="main">
-    <div className='background'></div>
     <HamburgerMenu />
     <LoadingBar scrollSpaceRef2={scrollSpaceRef}/>
     <ScrollSpaceComponent ref={scrollSpaceRef} />
     <ScrollAnimationComponent scrollSpaceRef={scrollSpaceRef} />
     <Projects />
+  </div>
   </div>
   )
 }

@@ -31,25 +31,24 @@ const LoadingBar: React.FC<ScrollAnimationComponentProps> = ({ scrollSpaceRef2 }
   }, [scrollSpaceRef2]);
 
   return (
-    <div className="loading-bar">
-        <div className="myportfolioname">
-            <p className='matt'>
-                Matt Jamison
-            </p>
-            <p className='stick'>
-               |
-            </p>
-            <p className='portfolio'>
-               Portfolio
-            </p>
-        </div>
-        <div className='scroll-indicator'>
-            <div className="arrow1"></div>
-            <p className="scroll-down">Scroll Down</p>
-            <div className="arrow2"> </div>
-        </div>
-
-    </div>
+      <div className="loading-bar">
+          <div className="myportfolioname">
+              <p className='matt'>
+                  Matt Jamison
+              </p>
+              <p className='stick'>
+                |
+              </p>
+              <p className='portfolio'>
+                Portfolio
+              </p>
+          </div>
+          <div className='scroll-indicator'>
+              <img src="/matthewjamisonportfolio/downarrow.png" className="arrow1"/>
+              <p className="scroll-down">Scroll Down</p>
+              <img src="/matthewjamisonportfolio/downarrow.png" className="arrow2"/>
+          </div>
+      </div>
   );
 }
 

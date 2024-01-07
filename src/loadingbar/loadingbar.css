@@ -1,14 +1,14 @@
 .loading-bar {
   height: 200px;
-  width: 800px;
+  width: 850px;
   /* border: solid;
   border-color: blue; */
   position: fixed;
-  top: 47%;
+  top:47%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease; /* Smooth transition for fading and shrinking */
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 10; /* Ensure it's above other content */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,23 +23,24 @@
 }
 
 .matt{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Heebo', sans-serif;
     color: white;
     padding-right: 10px;
-    font-weight:bolder;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: semi-bold;
 }
 
 .portfolio {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Heebo', sans-serif;
     color: #A398A9;
-    font-size: 50px;
+    font-size: 40px;
     padding-left: 10px;
+    font-weight: 100;
 }
 
 
 .scroll-indicator {
-    margin-top: -130px;
+    margin-top: -150px;
     display: flex;
     width: 250px;
     /* border: solid;
@@ -65,13 +66,10 @@
 
 .arrow1, .arrow2 {
 width: 20px; /* or the size of your arrow */
-height: 20px; /* or the size of your arrow */
-background-image: url('downarrow.png');
-background-size: contain;
-background-repeat: no-repeat;
+height: 15px; /* or the size of your arrow */
 animation: arrow-animation 1.5s infinite; /* Apply the animation below */
 position: absolute;
-top: 23px;
+top: 25px;
 }
 
 .arrow1 {
@@ -96,15 +94,43 @@ right: 20px;
   }
 
   .scroll-down{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Heebo', sans-serif;
     color: white;
     font-size: 20px;
 }
 
 .stick {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Heebo', sans-serif;
   color: #443C4C;
-  font-weight:100;
-  font-size: 80px;
-  transform: translateY(-50px);
+  font-weight: bolder;
+  font-size: 70px;
+  transform: translateY(-55px);
+}
+
+
+@media (max-width: 768px) {
+  .matt, .portfolio {
+    font-size: 30px;
+  }
+  .stick {
+    font-size: 50px;
+    transform: translateY(-35px);
+  }
+  .scroll-indicator {
+    margin-top: -100px;
+  }
+  .arrow1, .arrow2 {
+    height: 10px;
+    width: 15px;
+    top: 20px;
+  }
+  .arrow1 {
+    left: 40px;
+  }
+  .arrow2 {
+    right: 40px;
+  }
+  .scroll-down {
+    font-size: 15px;
+  }
 }

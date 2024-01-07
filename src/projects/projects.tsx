@@ -113,7 +113,7 @@ const goToSlide = (index: number)    => {
     <span className="hej fade-in" id="about">Hey There!</span>
     <div className="about-section fade-in">
         <p className="about">
-            My name is Matthew Jamison and I am a Computer Science student at the University of California, Irvine set to graduate at the end of 2024.
+            My name is Matthew Jamison and I am a second year Computer Science student at the University of California, Irvine set to graduate at the end of 2024.
             When I'm not buried in code, you can find me buried in a good book, behind a camera making films, or hitting the gym. What excites me the most 
             about computer science is the ever-evolving nature of the field; as a new software developer, I look forward to the endless opportunities to learn, create, 
             and make a difference with tech.
@@ -134,9 +134,9 @@ const goToSlide = (index: number)    => {
 
     {/* This Site */}
     <span className='project-title fade-in'>My Portfolio</span>
-    <span className='year fade-in'>January 2024</span>
+    <span className='year fade-in'>January 2024 (In Progress)</span>
     <div className='skills-box fade-in'>
-      <span className='skill'>ReactJS</span>
+      <span className='skill'>React</span>
       <span className='skill'>GSAP</span>
       <span className='skill'>UI/UX</span>
     </div>
@@ -155,14 +155,14 @@ const goToSlide = (index: number)    => {
     <span className='project-title fade-in'>The Buzz</span>
     <span className='year fade-in'>October 2023</span>
     <div className='skills-box fade-in'>
-      <span className='skill'>ReactJS</span>
+      <span className='skill'>React</span>
       <span className='skill'>AI</span>
       <span className='skill'>Web Scraping</span>
       <span className='skill'>UI/UX</span>
-      <span className='skill'>SQL Database</span>
+      <span className='skill'>SQL</span>
     </div>
     <div className="vidandabout fade-in">
-      <div className="video-container slide-right"><iframe width="650" height="400" src="https://www.youtube.com/embed/Pj54T2ClUgk?si=fyYrXxuOvWRzb7Cc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
+      <div className="video-container slide-right"><iframe className="YouTube" src="https://www.youtube.com/embed/Pj54T2ClUgk?si=fyYrXxuOvWRzb7Cc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></div>
       <div className="about-section2">
           <p className="about2 slide-left">
           As the lead developer of The Buzz I led a team of 3 to create an innovative news platform designed to revolutionize 
@@ -185,9 +185,9 @@ const goToSlide = (index: number)    => {
     <span className='project-title fade-in'>Concert Buddie</span>
     <span className='year fade-in'> May 2023</span>
     <div className='skills-box fade-in'>
-      <span className='skill'>HTML/CSS/JS</span>
+      <span className='skill'>Vanilla JS</span>
       <span className='skill'>Flask</span>
-      <span className='skill'>Multiple APIs</span>
+      <span className='skill'>APIs</span>
       <span className='skill'>UI/UX</span>
     </div>
     <div className="about-section3 fade-in">
@@ -241,7 +241,6 @@ const goToSlide = (index: number)    => {
     
     <a className="link-button" href="https://devpost.com/software/concertbuddie" target="_blank">See Project Page</a>
 
-    <span className='div1 fade-in'>----------------------------------------------------------</span>
 
     {/* Contact/Credits */}
     <div className="contandcred fade-in">

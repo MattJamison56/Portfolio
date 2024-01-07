@@ -1,20 +1,27 @@
 .framecontainer {
-    width: 100vw; /* 100% of the viewport width */
-    height: auto; /* 100% of the viewport height */
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed; /* Make it fixed to stay in place as you scroll */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensures that content scrolls over the background */
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the background */
-    background-color: #4D5359;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0; /* Ensures that content scrolls over the background */
+    overflow: hidden;
+    transform-origin: center;
   }
   
   .framecontainer img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Ensures the aspect ratio is maintained */
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    .framecontainer img {
+      transform: rotate(90deg);
+      width: 100vh;
+      height: 125vw;
+    }
   }
