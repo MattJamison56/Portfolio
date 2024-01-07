@@ -485,6 +485,10 @@ opacity: 1;
   .bee-video-container {
     height: 250px;
     width: 400px;
+    display: none;
+  }
+  .beevid {
+    display: none;
   }
 
   .carousel {
@@ -494,9 +498,11 @@ opacity: 1;
 
   .arrow {
     top: 90%;
+    font-size: 15px;
+    width: 20px;
   }
 
   .carousel-dots {
-    bottom: -15px;
+    bottom: -25px;
   }
 }
