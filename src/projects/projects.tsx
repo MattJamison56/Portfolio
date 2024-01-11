@@ -1,32 +1,12 @@
 import { useRef, useEffect, useState } from 'react';
 import './projects.css'
+import PhotoCarousel from './carousel/carousel';
+import PhotoCarousel2 from './carousel/carousel2';
 
 function Projects() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [isShown, setIsShown] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
-
-  const images = [
-    {url: "/matthewjamisonportfolio/concertbuddiehome.jpg", description: "Home Page"},
-    {url: "/matthewjamisonportfolio/concertbuddieexample.jpg", description: "Example Info Page"},
-    {url: "/matthewjamisonportfolio/concertbuddieloadingscreen.jpg", description: "Loading Page"}
-  ];
-  
-// Handle arrow navigation
-const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-};
-
-const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-};
-
-// Handle dot navigation
-const goToSlide = (index: number)    => {
-    setCurrentIndex(index);
-};
-
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -142,12 +122,14 @@ const goToSlide = (index: number)    => {
     </div>
     <div className="about-section3 fade-in">
         <p className="about3">
-        You're looking at it! I spent about a month just trying to plan what I wanted for the site and ended up on this space themed design. I chose the single page
-        layout for its simplistic nature and because I wanted to have the initial warpspeed animation at the top of the site. The color palette was space themed with
-        a lot of grays, blacks, and purple. I learned GSAP to create responsive animations and used the React library to assist with the process. 
-        Some animations were created in Adobe After Effects and images were created in Adobe Photoshop. 
+        You're looking at it! I spent about a month just trying to plan what I wanted for the site using Notion for planning and ended up on this 
+        space themed design. I designed this single page layout within Figma after creating a color palette to use. The initial warpspeed 
+        animation at the top of the site was made in Adobe After Effects. I learned GSAP to create responsive animations and used the React 
+        library to assist with the process. Planning on optimizing the site further and adding more cool features!
         </p>
     </div>
+
+    <PhotoCarousel2 />
 
     <span className='div1 fade-in'>-----------</span>
 
@@ -212,32 +194,7 @@ const goToSlide = (index: number)    => {
 
     <button className="read-but" onClick={handleClick2}>{isShown2 ? "Read Less" : "Read More"}</button>
 
-    {/* Carousel */}
-    <div className="carousel fade-in">
-        <div className="carousel-images" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-          {images.map((image, index) => (
-            <div className="carousel-slide" key={index}>
-              <img src={image.url} alt={`Slide ${index}`} />
-              <div className="description">{image.description}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Navigation Arrows */}
-        <button className="arrow prev" onClick={goToPrevious}>&#10094;</button>
-        <button className="arrow next" onClick={goToNext}>&#10095;</button>
-
-        {/* Dots Navigation */}
-        <div className="carousel-dots">
-          {images.map((_, index) => (
-            <span
-              key={index}
-              className={`dot ${index === currentIndex ? 'active' : ''}`}
-              onClick={() => goToSlide(index)}
-            ></span>
-          ))}
-        </div>
-    </div>
+   <PhotoCarousel />
     
     <a className="link-button" href="https://devpost.com/software/concertbuddie" target="_blank">See Project Page</a>
 
