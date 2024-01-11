@@ -19,7 +19,7 @@
 .myportfolioname {
     display: flex;
     justify-content: center;
-    animation: fadeInUpS 1s ease-out forwards; /* Apply the animation */
+    animation: fadeInUpS 2s ease-out forwards; /* Apply the animation */
 }
 
 .matt{
@@ -49,7 +49,7 @@
     position: relative;
     align-items: center;
     opacity: 0;
-    animation: fadeInUpS 1s ease-out forwards 2s;
+    animation: fadeInUpS 1.5s ease-out forwards 2s;
   }
 
   @keyframes fadeInUpS {

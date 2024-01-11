@@ -13,31 +13,32 @@ const ScrollAnimationComponent: React.FC<ScrollAnimationComponentProps> = ({ scr
     const totalImages = 56; // Total number of images
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+            gsap.registerPlugin(ScrollTrigger);
 
-        // Assuming the containerRef is the scrollable area
-        const updateImageIndex = (progress: number) => {
-            // Calculate the index based on scroll progress
-            const index = Math.min(totalImages-1, Math.floor(progress * totalImages));
-            setImageIndex(index);
-        };
+            // Assuming the containerRef is the scrollable area
+            const updateImageIndex = (progress: number) => {
+                // Calculate the index based on scroll progress
+                const index = Math.min(totalImages-1, Math.floor(progress * totalImages));
+                setImageIndex(index);
+            };
 
-        // Create ScrollTrigger instance
-        ScrollTrigger.create({
-            trigger: scrollSpaceRef.current,
-            start: "top top", 
-            end: "bottom bottom",
-            scrub: true,
-            onUpdate: (self) => {
-                updateImageIndex(self.progress);
-            }
-        });
+            // Create ScrollTrigger instance
+            ScrollTrigger.create({
+                trigger: scrollSpaceRef.current,
+                start: "top top", 
+                end: "bottom bottom",
+                scrub: true,
+                onUpdate: (self) => {
+                    updateImageIndex(self.progress);
+                }
+            });
 
         return () => {
             // Clean up ScrollTrigger instances
             ScrollTrigger.getAll().forEach(instance => instance.kill());
         };
     }, [scrollSpaceRef]);
+
 
     return (
         <div  className="framecontainer" /*ref={containerRef}}*/ >

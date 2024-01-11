@@ -3,6 +3,6 @@ html, body {
     padding: 0;
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden;
     background-color: #4D5359;
   }

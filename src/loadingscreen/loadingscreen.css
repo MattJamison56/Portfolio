@@ -1,0 +1,65 @@
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #4D5359;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+}
+
+.progress-bar {
+    border:solid;
+    border-color: whitesmoke;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    width: 800px;
+    height: 40px
+}
+
+.loading-text {
+    font-size: 36px;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 50%;
+}
+
+.progress {
+    height: 100%;
+    background: white;
+}
+
+.stah {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    transform-origin: center;
+}
+
+
+@media (max-width: 1000px) {
+    .stah {
+      transform: rotate(90deg);
+      width: 100vh;
+      height: 125vw;
+    }
+
+    .progress-bar {
+        width: 300px;
+        height: 20px;
+    }
+
+    .loading-text {
+        font-size: 18px;
+    }
+  }
