@@ -122,10 +122,10 @@ function Projects() {
     </div>
     <div className="about-section3 fade-in">
         <p className="about3">
-        You're looking at it! I spent about a month just trying to plan what I wanted for the site using Notion for planning and ended up on this 
-        space themed design. I designed this single page layout within Figma after creating a color palette to use. The initial warpspeed 
+        You're looking at it! I spent about a month just trying to plan what I wanted for the site using Notionand ended up choosing a
+        space themed design. I first created a color palette that I liked then designed this single page layout within Figma. The initial warpspeed 
         animation at the top of the site was made in Adobe After Effects. I learned GSAP to create responsive animations and used the React 
-        library to assist with the process. Planning on optimizing the site further and adding more cool features!
+        library to assist with the process. I plan on optimizing the site further and adding more cool features!
         </p>
     </div>
 
