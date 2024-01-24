@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Matthew Jamison
+EMAIL: mjamiso1@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Matthew Jamison">
+  <meta name="description" content="I made another portfolio. I already have one but I decided I wanted to try another time.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="icon" href="snorlax.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Matt's Portfolio</title>
+</head>
+<body>
+  <div class="background-black"></div>
+  <div class="main-page">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3f3f3f; width: 100vw; position: fixed; top: 0px;">
+            <div class="container-fluid">
+                <a class="navbar-brand ml-auto" href="#"><span class="logo">matt's portfolio</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="mylink poppins-regular" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mylink poppins-regular" href="#projects">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mylink poppins-regular" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <img class="cloud1" src="/cloud1.png" alt="cloud1">
+        <img class="cloud2" src="/cloud2.png" alt="cloud2">
+
+          <div class="initial-section">
+            <div class="bg-img"></div>
+            <div class="bigboys-container">
+              <a href="#about" class="bigboy1" >HEY I'M MATT</a>
+              <span class="bigboy2" >HERE'S MY</span>
+              <a href="#projects" class="bigboy3" >PORTFOLIO</a>
+            </div>
+            <div class="tower"></div>
+            <div class="tower2"></div>
+          </div>
+
+          <div class="about-section" id="about">
+            <h1 class="section-title">ABOUT ME</h1>
+            <div class="photoandtext">
+              <img class="profile-photo" src="profilephoto.png" alt="profile photo of matt">
+              <div class="about-text">
+                <span class="little-about">Here's a little about me</span>
+                <p class="about-p">I am a full time software engineer based in Irvine, California with skills as a
+                   full stack developer, UI/UX designer, and AI/ML engineer. 
+                </p>
+                <p class="about-p">While I currently work as a developer for the company CPM Axis I also 
+                  specialize in creating minimalistic frontend design solutions.
+                </p>
+                <p class="about-p">While I'm not buried in code, you can find me buried in a good book, creating YouTube videos,
+                   or lifting at the gym :/.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section" id="projects">
+            <h1 class="project-section-title">PROJECTS</h1>
+            <div class="project">
+                <div class="title-photo">
+                  <span class="project-title">The Buzz</span>
+                  <div class="year-skills">
+                    <span class="skills" style="margin-right: 20px;">October 2023</span>
+                    <span class="skills">React • AI • Web Scraping • UI/UX • SQL Database</span>
+                  </div>
+                  <a href="https://youtu.be/Pj54T2ClUgk" target="_blank"><img class=website-photo src="buzz/thebuzz.png" alt="The Buzz home screen photo"></a>
+                </div>
+                <p class="project-desc">As the lead developer of The Buzz I led a team of 3 to create an innovative news 
+                  platform designed to revolutionize the way users interact with news online. 
+                  Leveraging cutting-edge AI technology, It provides users with concise, summarized versions 
+                  of the latest news articles. Our mission is to deliver up-to-date news in a digestible format, 
+                  saving time and enhancing understanding for our audience.
+                </p>
+            </div>
+
+            <div class="project">
+              <p class="project-desc2"> ConcertBuddie is a platform born from personal experiences and 
+                a desire to help solo concert-goers. Originally centered around raves, it has expanded to 
+                offer concert tips, blogs, and outfit inspiration. Our primary focus has been on creating 
+                an inspiration page, with plans to integrate social media in the future.
+              </p>
+              <div class="title-photo2">
+                <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                  <span class="project-title">Concert Buddie</span>
+                  <div class="year-skills">
+                    <span class="skills" style="margin-right: 20px;">May 2023</span>
+                    <span class="skills">Vanilla JS • Flask • APIs • UI/UX</span>
+                  </div>
+                </div>
+                <a href="https://devpost.com/software/concertbuddie" target="_blank"><img class=website-photo src="concertbuddie/concertbuddiehome.jpg" alt="The Buzz home screen photo"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-section" id="contact">
+            <h1 class="section-title">CONTACT ME</h1>
+              <div class=all-contact>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                  <input type="hidden" name="access_key" value="6780df56-253c-4e8e-9b54-36b371fda540">
+                  <span class="getintouch">Get in touch!</span>
+                  <div style="display: flex; width: 100%;">
+                    <label for="nameInput" class="visually-hidden">Enter your name:</label>
+                    <input id="nameInput" type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <label for="emailInput" class="visually-hidden">Enter your email:</label>
+                    <input id="emailInput" type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                  </div>
+                  <label for="textInput" class="visually-hidden">Enter your message:</label>
+                  <textarea id=textInput name="message" placeholder="Your Message" class="contact-inputs" rows="10" cols="40" required></textarea>
+                  <button class="submit" type="submit">Send Message</button>
+                </form>
+                <div class="contact-stuff">
+                  <div class="contact-info">
+                    <span class="contact-title">Contact Info</span>
+                    <span class="contact-thing">matthewjamison56@gmail.com</span>
+                    <span class="contact-thing">(949) 627-3039</span>
+                  </div>
+                  <div class="contact-socials">
+                    <span class="contact-title">Other Stuff</span>
+                    <a href="https://www.linkedin.com/in/matthew-jamison-dev/" target="_blank" class="contact-thing">
+                      <img src="icons/linkedin.png" alt="linkedin logo">LinkedIn
+                    </a>
+                    <a href="https://github.com/MattJamison56" target="_blank" class="contact-thing">
+                      <img src="icons/github.png" alt="github logo" >GitHub</a>
+                    <a href="https://www.instagram.com/mattjamison56/" target="_blank" class="contact-thing">
+                      <img src="icons/insta.png" alt="instagram logo">Instagram</a>
+                  </div>
+                </div>
+              </div>
+              <div class="credit">
+                <span>Designed by Matthew Jamison</span>
+                <span>COPYRIGHT © 2024 Matthew Jamison</span>
+              </div>
+              <!-- <p>
+                <a href="http://validator.w3.org/check?uri=referer">
+                   W3C validator
+                </a>
+              </p> -->
+          </div>
+        
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
