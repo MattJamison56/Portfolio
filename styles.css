@@ -361,7 +361,7 @@ nav {
 .project {
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .title-photo {
@@ -716,6 +716,7 @@ nav {
     }
 
     .about-section {
+        height: 120vw;
         margin-top: 100px;
     }
 
@@ -812,6 +813,12 @@ nav {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
+        background-color: #EAE2CB;
+    }
+
+    .background-black {
+        height: 1px;
+        width: 1px;
     }
 
     .logo {
@@ -858,7 +865,8 @@ nav {
 
     .section-title {
         font-size: 50px;
-        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-width: 0px;
+        color: #3f3f3f;
     }
 
     .photoandtext {
@@ -883,16 +891,19 @@ nav {
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 10px;
+        color: #3f3f3f;
     }
 
     .little-about {
         font-size: 20px;
         margin: 0px;
+        color: #3f3f3f;
     }
 
     .about-p {
         font-size: 15px;
         margin-bottom: 5px;
+        color: #3f3f3f;
     }
 
     .project {
@@ -908,6 +919,7 @@ nav {
     .project-section-title {
         font-size: 50px;
         margin-top: 0px;
+        color: #3f3f3f;
     }
 
     .year-skills {
@@ -931,6 +943,7 @@ nav {
 
     .project-title {
         font-size: 20px;
+        color: #3f3f3f;
     }
 
     .project-desc {
@@ -939,6 +952,7 @@ nav {
         width: 350px;
         margin-left: 0px;
         margin-right: 0px;
+        color: #3f3f3f;
     }
 
     .title-photo2 {
@@ -950,11 +964,12 @@ nav {
         top: 40px;
         font-size: 12px;
         width: 350px;
+        color: #3f3f3f;
     }
 
     .contact-section {
         margin-top: -35vh;
-        height: 90vh;
+        height: 100vh;
     }
 
     .contact-form {
@@ -1006,14 +1021,18 @@ nav {
 }
 
 @media (max-width: 380px) {
+
+    .about-section {
+        height: 150vh;
+    }
     .project {
-        height: 90vh;
+        height: 100vh;
         margin-top: 50px;
     }
 
     .contact-section {
         margin-top: -300px;
-        height: 100vh;
+        height: 120vh;
     }
 
     .bg-img {
@@ -1021,7 +1040,7 @@ nav {
     }
 
     .credit {
-        margin-top: -40px;
+        margin-top: 10px;
     }
 
 }
