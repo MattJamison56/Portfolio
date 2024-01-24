@@ -819,7 +819,7 @@ nav {
     }
 
     .bg-img {
-        top: 360px;
+        top: 37%;
         width: 350px;
         height: 200px;
     }
@@ -843,6 +843,7 @@ nav {
         height: 100px;
         animation: fadeInDown 1s ease forwards;
         transform: translateX(0%);
+        opacity: 0;
     }
 
     .cloud2 {
@@ -852,6 +853,7 @@ nav {
         height: 150px;
         animation: fadeInDown 1s ease forwards;
         transform: scale(-1) translateX(0%);
+        opacity: 0;
     }
 
     .section-title {
@@ -952,7 +954,7 @@ nav {
 
     .contact-section {
         margin-top: -35vh;
-        height: 80vh;
+        height: 90vh;
     }
 
     .contact-form {
@@ -998,7 +1000,7 @@ nav {
     }
 
     .credit {
-        margin-top: -20px;
+        margin-top: 20px;
         font-size: 12px;
     }
 }
