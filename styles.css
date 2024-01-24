@@ -491,7 +491,7 @@ nav {
 .contact-stuff {
     display: flex;
     flex-direction: column;
-    width: 750px;
+    width: 600px;
     margin-left: 100px;
 }
 
@@ -559,7 +559,7 @@ nav {
     border: 0;
 }
 
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
     .bigboy1, .bigboy2, .bigboy3 {
         font-size: 130px;
         -webkit-text-stroke-width: 5px;
@@ -575,9 +575,9 @@ nav {
         top: 30%;
     }
 
-}
+} */
 
-@media (max-width: 1750px) {
+@media (max-width: 2200px) {
     .bigboy1, .bigboy2, .bigboy3 {
         font-size: 120px;
         -webkit-text-stroke-width: 5px;
@@ -646,7 +646,7 @@ nav {
     }
 
     .contact-section {
-        height: 100vh;
+        height: 110vh;
     }
 
     .contact-form {
@@ -696,7 +696,7 @@ nav {
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1750px) {
     .bigboy1, .bigboy2, .bigboy3 {
         font-size: 100px;
         -webkit-text-stroke-width: 4px;
@@ -818,11 +818,14 @@ nav {
     .background-black {
         height: 1px;
         width: 1px;
+        opacity: 0;
     }
 
     .cloud1, .cloud2 {
         height: 1px;
         width: 1px;
+        animation: none;
+        opacity: 0;
     }
 
     .logo {
@@ -1009,17 +1012,20 @@ nav {
 
     .about-section {
         height: 150vh;
+        margin-bottom: 100px;
     }
     .project {
         height: 100vh;
         margin-top: 160px;
-        border: solid;
-        border-color: red;
     }
 
     .contact-section {
         margin-top: -300px;
         height: 120vh;
+    }
+
+    .project-section-title {
+        margin-bottom: 20px;
     }
 
     .bg-img {
