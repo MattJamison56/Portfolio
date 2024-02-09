@@ -959,6 +959,7 @@ nav {
         flex-direction: column;
         align-items: center;
         height: 80vh;
+        margin-top: 50px;
     }
 
     .project-section {
@@ -1006,12 +1007,12 @@ nav {
     }
 
     .title-photo2 {
-        margin-top: -300px;
+        margin-top: -350px;
     }
 
     .project-desc2 {
         position: relative;
-        top: 225px;
+        top: 200px;
         font-size: 12px;
         width: 350px;
         color: #3f3f3f;
@@ -1019,8 +1020,8 @@ nav {
     }
 
     .contact-section {
-        margin-top: -10vh;
-        height: 90vh;
+        margin-top: 0vh;
+        height: 100vh;
     }
 
     .contact-form {
@@ -1030,7 +1031,6 @@ nav {
 
     .all-contact {
         flex-direction: column;
-        margin-top: 20px;
     }
 
     .getintouch {
