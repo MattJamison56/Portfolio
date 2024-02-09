@@ -1010,6 +1010,10 @@ nav {
         margin-top: -350px;
     }
 
+    .phonespacer {
+        margin: 40px;
+    }
+
     .project-desc2 {
         position: relative;
         top: 200px;
