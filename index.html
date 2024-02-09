@@ -29,9 +29,9 @@ EMAIL: mjamiso1@uci.edu
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3f3f3f; width: 100vw; position: fixed; top: 0px;">
             <div class="container-fluid">
                 <a class="navbar-brand ml-auto" href="#"><span class="logo">matt's portfolio</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
                 <div class="collapse navbar-collapse justify-content-end ml-auto" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -81,44 +81,67 @@ EMAIL: mjamiso1@uci.edu
               </div>
             </div>
           </div>
-
+          
           <div class="project-section" id="projects">
+
+
             <h1 class="project-section-title">PROJECTS</h1>
+
+
             <div class="project">
-                <div class="title-photo">
+              <div class="title-photo">
+                <span class="project-title">Gmail Wrapped</span>
+                <div class="year-skills">
+                  <span class="skills" style="margin-right: 20px;">January 2024</span>
+                  <span class="skills">React • Machine Learning • Tokenization • UI/UX • Firebase</span>
+                </div>
+                <a href="https://devpost.com/software/gmail-wrapped-ojncif" target="_blank"><img class=website-photo src="wrapped/gwrapped.png" alt="Gmail Wrapped home screen photo"></a>
+              </div>
+              <p class="project-desc">In the Gmail Wrapped project, I led a team of four in developing an
+                 email organization app using ReactJS, Firebase, GmailAPI, and OpenAPI. We focused on enhancing email filtering 
+                 and categorization through machine learning for text analysis and implemented a secure token-based 
+                 sign-in for improved user access. Our work aimed to make email management more efficient for users.
+              </p>
+            </div>
+
+            <div class="project">
+              <p class="project-desc2"> As the lead developer of The Buzz I led a team of 3 to create an innovative news 
+                platform designed to revolutionize the way users interact with news online. 
+                Leveraging cutting-edge AI technology, It provides users with concise, summarized versions 
+                of the latest news articles. Our mission is to deliver up-to-date news in a digestible format, 
+                saving time and enhancing understanding for our audience.
+              </p>
+              <div class="title-photo2">
+                <div style="display: flex; flex-direction: column; align-items: flex-end;">
                   <span class="project-title">The Buzz</span>
                   <div class="year-skills">
                     <span class="skills" style="margin-right: 20px;">October 2023</span>
                     <span class="skills">React • AI • Web Scraping • UI/UX • SQL Database</span>
                   </div>
-                  <a href="https://youtu.be/Pj54T2ClUgk" target="_blank"><img class=website-photo src="buzz/thebuzz.png" alt="The Buzz home screen photo"></a>
                 </div>
-                <p class="project-desc">As the lead developer of The Buzz I led a team of 3 to create an innovative news 
-                  platform designed to revolutionize the way users interact with news online. 
-                  Leveraging cutting-edge AI technology, It provides users with concise, summarized versions 
-                  of the latest news articles. Our mission is to deliver up-to-date news in a digestible format, 
-                  saving time and enhancing understanding for our audience.
-                </p>
+                <a href="https://youtu.be/Pj54T2ClUgk" target="_blank"><img class=website-photo src="buzz/thebuzz.png" alt="The Buzz home screen photo"></a>
+              </div>
             </div>
 
             <div class="project">
-              <p class="project-desc2"> ConcertBuddie is a platform born from personal experiences and 
+              <div class="title-photo">
+                <span class="project-title">Concert Buddie</span>
+                <div class="year-skills">
+                  <span class="skills" style="margin-right: 20px;">May 2023</span>
+                  <span class="skills">Vanilla JS • Flask • APIs • UI/UX</span>
+                </div>
+                <a href="https://devpost.com/software/concertbuddie" target="_blank"><img class=website-photo src="concertbuddie/concertbuddiehome.jpg" alt="Concert Buddie home screen photo"></a>
+              </div>
+              <p class="project-desc">ConcertBuddie is a platform born from personal experiences and 
                 a desire to help solo concert-goers. Originally centered around raves, it has expanded to 
                 offer concert tips, blogs, and outfit inspiration. Our primary focus has been on creating 
                 an inspiration page, with plans to integrate social media in the future.
               </p>
-              <div class="title-photo2">
-                <div style="display: flex; flex-direction: column; align-items: flex-end;">
-                  <span class="project-title">Concert Buddie</span>
-                  <div class="year-skills">
-                    <span class="skills" style="margin-right: 20px;">May 2023</span>
-                    <span class="skills">Vanilla JS • Flask • APIs • UI/UX</span>
-                  </div>
-                </div>
-                <a href="https://devpost.com/software/concertbuddie" target="_blank"><img class=website-photo src="concertbuddie/concertbuddiehome.jpg" alt="The Buzz home screen photo"></a>
-              </div>
             </div>
+
+
           </div>
+          
 
           <div class="contact-section" id="contact">
             <h1 class="section-title">CONTACT ME</h1>
@@ -166,6 +189,7 @@ EMAIL: mjamiso1@uci.edu
           </div>
         
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
