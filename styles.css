@@ -964,7 +964,7 @@ nav {
 
     .project-section {
         margin-top: -6vh;
-        height: 200vh;
+        height: 240vh;
     }
 
     .project-section-title {
@@ -1008,10 +1008,6 @@ nav {
 
     .title-photo2 {
         margin-top: -350px;
-    }
-
-    .phonespacer {
-        margin: 40px;
     }
 
     .project-desc2 {
